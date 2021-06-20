@@ -1,4 +1,5 @@
 ﻿using AntiAircraftGameProject.Library.Concrete;
+using System;
 using System.Windows.Forms;
 
 namespace AntiAircraftGameProject.Desktop
@@ -9,7 +10,10 @@ namespace AntiAircraftGameProject.Desktop
         public MainForm()
         {
             InitializeComponent();
+            _game.PassedTimeChanged += Game_PassedTimeChanged;
         }
+
+      
 
         private void MainForm_KeyDown(object sender, KeyEventArgs e)
         {
@@ -31,6 +35,11 @@ namespace AntiAircraftGameProject.Desktop
                     _game.MoveAircraft(Library.Enum.Direction.Left);
                     break;
             }
+        }
+
+        private void Game_PassedTimeChanged(object sender, EventArgs e)
+        {
+            timerLbl.Text = $"{_game.PassedTime.Minutes}:{_game.PassedTime.Seconds.ToString("D2")}";
         }
     }
 }

@@ -9,9 +9,11 @@ namespace AntiAircraftGameProject.Library.Interface
 {
     internal interface IGame
     {
+        event EventHandler PassedTimeChanged;
+
         bool IsGameContinue { get; }
 
-        TimeSpan Passedtime { get; }
+        TimeSpan PassedTime { get; }
 
         void Start();
 
