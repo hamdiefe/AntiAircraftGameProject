@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AntiAircraftGameProject.Desktop", "AntiAircraftGameProject.Desktop\AntiAircraftGameProject.Desktop.csproj", "{48DF95B9-4ED3-4112-90DE-3900768F0DC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AntiAircraftGameProject.Library", "AntiAircraftGameProject.Library\AntiAircraftGameProject.Library.csproj", "{189EECCB-5A82-4848-B9D7-6AE6B3372CE8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{48DF95B9-4ED3-4112-90DE-3900768F0DC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48DF95B9-4ED3-4112-90DE-3900768F0DC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48DF95B9-4ED3-4112-90DE-3900768F0DC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48DF95B9-4ED3-4112-90DE-3900768F0DC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{189EECCB-5A82-4848-B9D7-6AE6B3372CE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{189EECCB-5A82-4848-B9D7-6AE6B3372CE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{189EECCB-5A82-4848-B9D7-6AE6B3372CE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{189EECCB-5A82-4848-B9D7-6AE6B3372CE8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D2A7D0FD-6A34-4251-BDDC-ABEDDD87E065}
+	EndGlobalSection
+EndGlobal
