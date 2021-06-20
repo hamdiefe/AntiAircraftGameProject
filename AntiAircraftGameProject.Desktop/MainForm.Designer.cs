@@ -101,6 +101,7 @@ namespace AntiAircraftGameProject.Desktop
             this.Name = "MainForm";
             this.Text = "Uçak Savar Oyunu";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MainForm_KeyDown);
             this.informationPnl.ResumeLayout(false);
             this.informationPnl.PerformLayout();
             this.ResumeLayout(false);

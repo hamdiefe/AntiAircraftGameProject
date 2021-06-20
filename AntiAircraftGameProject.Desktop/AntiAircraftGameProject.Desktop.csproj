@@ -85,5 +85,11 @@
   <ItemGroup>
     <Content Include="aircraft.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AntiAircraftGameProject.Library\AntiAircraftGameProject.Library.csproj">
+      <Project>{189eeccb-5a82-4848-b9d7-6ae6b3372ce8}</Project>
+      <Name>AntiAircraftGameProject.Library</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
