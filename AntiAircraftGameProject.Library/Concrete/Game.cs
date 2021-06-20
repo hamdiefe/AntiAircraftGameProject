@@ -2,6 +2,7 @@
 using AntiAircraftGameProject.Library.Interface;
 using System;
 using System.Windows.Forms;
+using System.Drawing;
 
 namespace AntiAircraftGameProject.Library.Concrete
 {
@@ -14,8 +15,11 @@ namespace AntiAircraftGameProject.Library.Concrete
 
         public event EventHandler PassedTimeChanged;
 
-        public Game()
+        private readonly Panel _antiAircraftPnl;
+
+        public Game(Panel antiAirCraftPnl)
         {
+            _antiAircraftPnl = antiAirCraftPnl;
             _passedTimeTimer.Tick += PassedTime_Tick;
         }
 
@@ -53,6 +57,17 @@ namespace AntiAircraftGameProject.Library.Concrete
 
             IsGameContinue = true;
             _passedTimeTimer.Start();
+
+            CreateAntiAirCraft();
+        }
+
+        private void CreateAntiAirCraft()
+        {
+            var antiAircraft = new AntiAircraft(_antiAircraftPnl.Width)
+            {
+                Image = Image.FromFile(@"images\antiaircraft.png")
+            };
+            _antiAircraftPnl.Controls.Add(antiAircraft);
         }
 
         private void Stop()

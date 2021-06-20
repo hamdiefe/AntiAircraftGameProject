@@ -6,10 +6,12 @@ namespace AntiAircraftGameProject.Desktop
 {
     public partial class MainForm : Form
     {
-        private readonly Game _game = new Game();
+        private readonly Game _game;
+
         public MainForm()
         {
             InitializeComponent();
+            _game = new Game(antiAircraftPnl);
             _game.PassedTimeChanged += Game_PassedTimeChanged;
         }
 
